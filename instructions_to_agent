@@ -1,0 +1,150 @@
+**Team Synergy**
+
+For this part of the analysis, please use the ‘clean_cb_profile’ and ‘clean_linkedin_profile’ to find the required information. 
+
+**Prior Working Relationships**
+‘org_name’ - the name of the organisation currently being analysed. 
+
+‘group_size’ - Number of people in the team. 
+
+‘shared_companies’ - The number of companies worked at by at least 2+ of the founders of the same organisation. When considering working, only consider full-time roles, and do not consider internships, volunteering etc. 
+
+‘shared_big_companies’ - The number of big-tech companies worked at by at least 2 founders of the same organisation. The big companies are as follows - Meta (Facebook), Apple, Amazon, Netflix, or Google. When considering working, only consider full-time roles, and do not consider internships, volunteering etc. 
+
+‘countries_worked_in_together’ - The number of countries worked in by at least 2 of the founders of the same organisation, at the same time. When considering, consider any roles - including internships, part-time work etc. 
+
+**Duration of Collaboration**
+
+‘worked_together_time’ - The average number of time, in years, that any two of the founders worked together. This can be found by finding the overlap in working time on the linkedin in the same company. If 'shared_companies' equals 0, this should also equal 0.
+
+‘worked_together_time_big’ - The average number of time, in years, that any two of the founders worked together at a big tech company. This can be found by finding the overlap in working time on the linkedins in the same company. In this context, a big tech company is Meta (Facebook), Apple, Amazon, Netflix, or Google. If 'shared_big_companies' equals 0, then this should also equal 0. 
+
+**Complementary Skills**
+‘communication_skills’ - The number of founders indicating that they have good communication skills, in the skills section of their Linkedin or Crunchbase. 
+
+‘emotional_intelligence’ - The number of founders indicating they have good emotional intellgience skills. This is evaluated by finding any skills in the Linkedin, with emotional intelligence skills such as empathy, understanding, conflict resolution etc. This can also be indicated by looking at the work experience and finding any previous volunteering, mentoring, or DEI experience. 
+
+‘shared_languages’ - The number of languages spoken by at least 2 of the founders. 
+
+‘shared_skills’ - The number of skills exhibited by at least 2 of the founders in the skills section of the Linkedin. 
+
+‘endorsements’ - The number of times any founder has endorsed another founder on Linkedin. 
+
+'skill_synergy' - For each organisation, we want to evaluate the synergy score of their skills, by giving them a score from 0 to 2 as follows:
+0 (none of the founders have business or technical skills)
+1 (the founder team have either business or technical experience, but not both)
+2 (the founder team have at least one founder with business experience and one founder with technical experience)
+
+**Shared Education**
+
+‘years_studied_together’ - The average number of years that any two of the founders studied together at the same university, either for undergraduate (bachelors) or postgraduate (masters, doctoral education). 
+
+‘level_studied_together’ - The average level studied together, giving one of three answers: 
+Bachelors
+Masters
+Doctoral (PHD)
+If years_studied_together is 0, this should be filled with None.  
+
+
+‘shared_projects’ - The average number of shared endeavours between at least two of the founders at the same university. This can include any of the following:
+Extracurricular projects
+Societies/Clubs worked in together
+Volunteering
+Competitions 
+ 
+
+‘shared_publications’ - The number of publications published by at least two of the founders, not necessarily at the same university. 
+
+**Team-Idea Fit**
+
+**Required expertise for the idea**
+
+‘prior_experience_scale’ - Evaluate the average level of experience in the industry that the organisation is in, on a scale of 1 to 5, by looking at all the founders Linkedins.
+1 (no founders have any experience in this indsutry, technical and business)
+2 (some founders have some experience in this industry, either tehcnical or business)
+3 (all founders have some experience in this industry, or some founders have excellent experience and some have no experience)
+4 (all founders have some experience in this industry, and some have  excellent experience)
+5 (all the founders are highly experienced in this industry, and if this idea combines two industries, they all have experience in both industries.)
+
+'founders_with_prior_technical_experience' - The number of founders with prior technical experience in the industry of the organisation, such as experience in technology, engineering etc. This can be found by checking their linkedin and Crunchbase
+
+'founders_with_prior_business_experience' - The number of founders with prior experience in business, through either a business major, completing an MBA, or previouisly operating another business, checked by looking through their Linkedin and Crunchbase.
+
+'founders_with_good_network' - The number of founders with a good network of individuals in the same industy as the business they are founding, checked by looking at their Linkedin connections, or other people they interact with on linkedin.
+
+'founders_with_marketing_experience' - The number of founders with experience in marketing, through a previous marketing job, marketing courses, or any other marketing-related experience you can find on their Linkedin. 
+
+'founders_with_finance_experience' - The number of founders with experience in finance, through a previous finance job (CFO or any others), a finance degree, or any other finance-related experience you can find on their Linkedin.
+
+'founders_with_legal_experience' - The number of founders with experience in legal and regulatory frameworks, which may be indicated on their skills section, or any other place in their linkedin indicating they understanding legal frameworks.
+
+'founders_resilient' -  The number of founders exhibiting resilience related skills, such as problem-solving, conflict resolution. 
+
+**Market Barriers**
+Using Information from the internet from trusted sources, find this information based on the idea. Below is a guide for evaluating whether or not a source is trusted. For ease, use the source if any of these are met:
+The author is a well-respected
+Citations for sources used
+Up-to-date information for the topic
+Unbiased analysis of the topic, e.g. the author examines multiple perspectives
+
+‘rd_costs’ - On a scale from 1 to 10, evaluate the costs needed for research and development in this industry for this idea. For example, an industry with a high level of equipment needed for research would have high, whereas one which can be carried out with relatively little high-tech equipment has low research costs. This is not an exhaustive list of how costs should be evaluated. 
+
+‘set_up_costs’ -  On a scale from 1 to 10, evalue the costs needed to set up a business in this industry or surrounding this idea. For example, an industry with a lot of equipment needed to set up would have a high set-up cost. This is not an exhaustive list of how costs should be evaluarexd.
+
+‘brand_loyalty’ - On a scale from 1 to 10, evaluate the brand loyalty of this industry, which can be evaluated by looking at how monopolised this industry is. 
+
+‘legal_barriers’ - On a scale from 1 to 10, evaluate the level of legal barriers there are to set up a business in this indsutry, such as the amount of paperwork files, or previous experience of how dfifficult it was legally to set up a basis. 
+
+‘capital_requirements’ - On a scale from 1 to 10, evaluate the amount of capital needed to start a business with this idea. Examples of capital include factories, machinery, patents, or financial assets like money.
+
+‘years_to_breakeven’ - The average number of years for a company in this field to breakeven, where breaking even is when profits equal costs for the business. 
+
+‘market_saturation’ - The number of already established companies in this field/with a similar idea, opened internationally. 
+
+‘companies_that_failed’ - The number of companies that failed in this idea/field over the last year internationally, where business failure can be liquidation, filing for bankruptcy, or any other indicator that the business is no longer operational. 
+
+**Founders’ Relevant experience**
+
+‘prior_founding_experience’ - The number of founders who have had previous founding experiences with another company, whether it was successful or not. 
+
+‘previous_big_tech_experience’ - The number of founders who have previouisly worked at big-tech companies, where the big tech companies are Meta (Facebook), Amazon, Apple, Netflix, or Google. Any experience counts - including internships, volunteering etc.
+
+‘institution _level’ - The average level of institution across all founders, evaluating based off the Times Higher Education World University Rankings:
+1 (Top 10)
+2 (11 - 100)
+3 (101 - 500)
+4 (500 - 1000)
+5 (1001 - the end of the list)
+
+‘average_publications’ - The average number of publications, published in a respectable journal or any higher institution, by each of the founders. 
+
+‘average_education’ - The average education level of the founders, with the following as the numerical markers:
+1 (Bachelors)
+2 (Masters)
+3 (PHD or higher)
+
+‘highest_education’ -  The highest level of education held by any of the founders, giving one of three (Bachelors is the lowest, PHD is the highest):
+Bachelors
+Masters (including MBA)
+PHD
+
+‘average_extroversion’ - The extroversion is a method of evaluating the completeness of a founder’s Linkedin, giving them a score from 1 to 5, where 1 indicates low-completeness, and 5 indicates high-completeness. Give a score of 0 if there is no evidence of extroversion. 
+
+‘leadership_roles’ - The average number of leadership roles held by each of the founders, where a leadership role can be:
+A founder
+A chief/executive role
+A president/vice-president of a society 
+A manager/team manager
+This is not an exhaustive list.
+
+‘years_of_experience’ - The average number of years of experience for each founder, where a year of experience is a year working in the relevant industry for the idea, as a full-time role (no part-time roles, internships etc.)
+
+‘years_post_grad’ - The average number of years post bachelor-completion that the company has been founded for each founder. 
+
+‘countries_worked_in_average’ - The average number of countries each founder worked in. 
+
+‘average_GPA’ - The average university GPA for all the founders, ensuring that it is evaluated to a 4.0 scale (if not, scale it to 4.0 from the other scale)
+
+‘average_awards’ - The average number of founders receiving significant awards in any field, where these awards should be on a national level or higher. 
+
+'success' - It is a 1 if the business was successful, and 0 if the business was unsuccessful. Find the business success information from the 'success' field of the passed in data.
