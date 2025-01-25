@@ -106,7 +106,7 @@ To read the paper for this project, please see:
 
 ## Contact
 
-Email: mariamantably@gmail.com
-Instagram: @mariamelantable
-Github: @mariamelantably
+Email: mariamantably@gmail.com \n
+Instagram: @mariamelantable \n 
+Github: @mariamelantably \n
 Linkedin: (www.linkedin.com/in/mariam-elantably-ab0559290)
